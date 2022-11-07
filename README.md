@@ -10,3 +10,6 @@ Only apply for Chrome extension docs or web store docs.
 
 ## Tabs manager
 It will group tabs from all the open Chrome windows.
+
+## Snowphoria
+It will display the temperature at Budapest
