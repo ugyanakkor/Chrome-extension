@@ -1,8 +1,9 @@
 async function fetchData() {
+  const apiKey = 'API_KEY';
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': '5a93b1b61cmshdabcc6e5056f1cfp13faf3jsn018b95b2dd7a',
+      'X-RapidAPI-Key': apiKey,
       'X-RapidAPI-Host': 'foreca-weather.p.rapidapi.com'
     }
   };
