@@ -7,5 +7,11 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "Snowphoria"
+  },
+  "icons": {
+    "16": "images/snow-16.png",
+    "32": "images/snow-32.png",
+    "48": "images/snow-48.png",
+    "128": "images/snow-128.png"
   }
 }
