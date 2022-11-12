@@ -1,5 +1,5 @@
 {
-  "name": "Snow phoria",
+  "name": "Snowphoria",
   "version": "1.0.0",
   "description": "Example to do an API call, which will return the temperature at Budapest",
   "manifest_version": 3,
