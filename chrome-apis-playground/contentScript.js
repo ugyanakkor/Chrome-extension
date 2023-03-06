@@ -1,8 +1,19 @@
-confirm('hello');
+const text = [];
 
 const aTags = document.getElementsByTagName('a');
 
 for (const tag of aTags)
-  if (tag.textContent.includes('i'))
-    tag.style = "background-color: yellow";
+  text.push(tag.textContent);
 
+chrome.storage.local.set({
+  text,
+})
+
+chrome.runtime.sendMessage(null, text, (response) => {
+  console.log(`i'm from the send response function` + response);
+});
+
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  console.log(message);
+  console.log(sender);
+});

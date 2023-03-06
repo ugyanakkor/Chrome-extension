@@ -12,3 +12,13 @@ chrome.runtime.onInstalled.addListener((details) => {
     })
   });
 });
+
+
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  console.log(msg);
+  console.log(sender);
+  sendResponse('recieved message from background');
+
+  chrome.tabs.sendMessage(sender.tab.id, "Got your messages from background!")
+});
+
