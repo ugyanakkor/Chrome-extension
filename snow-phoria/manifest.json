@@ -1,8 +1,8 @@
 {
   "name": "Snowphoria",
   "version": "1.0.0",
-  "description": "Example to do an API call, which will return the temperature at Budapest",
   "manifest_version": 3,
+  "description": "Example to do an API call, which will return the temperature at Budapest",
   "author": "Tibor Kovacs",
   "action": {
     "default_popup": "popup.html",
