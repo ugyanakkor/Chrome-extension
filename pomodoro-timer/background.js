@@ -8,6 +8,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
       if (res.isRunning) {
         let timer = res.timer + 1;
         let isRunning = true;
+        // modify notification time
         if (timer === 60 * res.timeOption) {
           this.registration.showNotification('Pomodoro Timer', {
             body: `${res.timeOption} minutes has passed!`,
